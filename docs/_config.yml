@@ -21,7 +21,7 @@
 title: Dinosaur Museum in a Box
 email: finnlattimore at gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write up of a lockdown project making some fun dinosaur resources for primary schoolers.
+  A lockdown project making some fun dinosaur resources for primary schoolers.
 baseurl: /dinosaur-museum-box # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Finn_Lattimore
@@ -29,8 +29,8 @@ github_username:  finnhacks42
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
