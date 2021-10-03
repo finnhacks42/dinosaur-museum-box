@@ -6,7 +6,7 @@ permalink: /
 
 This was a lockdown project to create some fun dinosaur resources for primary schoolers.
 The idea was triggered when a little parcel arrived from my wonderful Aunt with some (real) ammonite and Orthoceras fossils from her teaching days.
-The kids were enthralled so we looked at photos of T-rex claws and Megalodon teeth. Then I discovered that some museums, private collectors and research organisations had very generously made 3d scans of their fossils available online for free, so I decided to make a mini-dinosaur museum in a box, that the kids could share with their classmates when they returned to school (since excursions and museums were off limits for the indefinate future).
+The kids were enthralled so we looked at photos of T-rex claws and Megalodon teeth. Then I discovered that some museums, private collectors and research organisations had very generously made 3d scans of their fossils available online for free. I decided to make a mini-dinosaur museum in a box that the kids could share with their classmates when they returned to school (since excursions and museums were off limits for the indefinate future).
 
 ![image]({{ site.baseurl }}/assets/images/dino-museum-in-a-box.png)
 
