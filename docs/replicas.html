@@ -1,0 +1,94 @@
+---
+title: 3d printable models
+layout: default
+---
+<link rel="stylesheet" href="/assets/css/dino.css">
+
+<div class="main">
+    <h1>The Dinosaur Museum in a box</h1>
+    <p>This was a project concieved during the lockdown period</p>
+    <h2>Replica Fossils</h2>
+    <ul class="cards">
+        {% for item in site.data.fossils2 %}
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_image"><img src="{{ site.baseurl }}/assets/images/fossils/{{ item.image }}"></div>
+                <div class="card_content">
+                    <h2 class="card_title">{{ item.name }}</h2>
+                    <p class="card_text">{{ item.description }}</p>
+                    <div class="card_footer">
+                        {% if item.location %}
+                        <div class="term">
+                            <span class="termdef">Found:</span>
+                            <span class="termval">{{ item.location }}</span>
+                        </div>
+                        {% endif %}
+                        {% if item.museum %}
+                        <div class="term">
+                            <span class="termdef">Held by:</span>
+                            <span class="termval">{{ item.museum }}</span>
+                        </div>
+                        {% endif %}
+                        <div class="term">
+                            <span class="termdef">Era:</span>
+                            <span class="termval">{{ item.period }}</span>
+                        </div>
+                        {% if item.scale != "1" %}
+                        <div class="term">
+                            <span class="termdef">Scale:</span>
+                            <span class="termval">{{ item.scale }}</span>
+                        </div>
+                        {% endif %}
+                        <div class="term download">
+                            <a href="/assets/stl/{{ item.stl }}" download>Download stl</a>
+                        </div>
+                        <div class="term link">
+                            <a href="{{ item.source }}">original model ({{ item.source_text }})</a>
+                        </div>
+                    </div>
+                    <!--<button class="btn card_btn">Read More</button> -->
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <!-- <h2>Dinosaur models</h2>
+    <ul class="cards">
+        {% for item in site.data.dinos %}
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_image"><img src="/assets/images/toys/{{ item.image_src }}"></div>
+                <div class="card_content">
+                    <h2 class="card_title">{{ item.name }}</h2>
+                    <p class="card_text">{{ item.text }}</p>
+                    <div class="term">
+                        <span class="termdef">Era:</span>
+                        <span class="termval">{{ item.age }}</span>
+                    </div>
+                    <div class="term">
+                        <span class="termdef">Typical size:</span>
+                        <span class="termval">{{ item.typical_size }}</span>
+                    </div>
+                    {% if item.scale != "1" %}
+                    <div class="term">
+                        <span class="termdef">Scale:</span>
+                        <span class="termval">{{ item.scale }}</span>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul> -->
+    <!-- <h2>Activity ideas</h2>
+    <h3>Timeline</h3>
+    <h3>Scale and size</h3>
+    <h3>Paleographic puzzle</h3>
+    <h3>Another Paleographic puzzle</h3>
+    <p>How do we know what the dinosaurs looked like?</p>
+    <h3>Make your own ammonite casts</h3> -->
+
+
+</div>
+<!--Add licence information, make stuff show conditionally -->
